@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SOV Run Summary</title>
+	<meta name="description" content="How to create a simple two column CSS layout with full width header and footer.">
+	<meta name="copyright" content="Copyright (c) 2014 Nicholas Malaya">
+	<meta name="author" content="Nicholas Malaya">
+	<style type="text/css" media="screen, print, projection">
+	body,
+	html {
+		margin:0;
+		padding:0;
+		color:#000;
+		background:#A9A0A0;
+	}
+	#wrap {
+		width:750px;
+		margin:0 auto;
+		background:#FFFFFF;
+	}
+	#header {
+    	padding:5px 10px;
+		background:#9c9;
+	}
+	h1 {
+	    margin:0;
+    }
+	#nav {
+		padding:5px 10px;
+		background:#A9A0A0;
+	}
+	#nav ul {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#nav li {
+		display:inline;
+		margin:0;
+		padding:0;
+	}
+	#main {
+		float:left;
+		width:480px;
+		padding:10px;
+		background:#FFFFFF;
+	}
+	h2 {
+		margin:0 0 1em;
+	}
+	#sidebar {
+		float:right;
+		width:230px;
+		padding:10px;
+		background:#A9A0A0;
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+	background:#9c9;
+	}
+	#footer p {
+		margin:0;
+    }
+	* html #footer {
+		height:1px;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header"><h1>RunX</h1></div>
+	<div id="main">
+		<h2>Column 1</h2>
+		<p>TEXTA</p>
+	</div>
+	<div id="sidebar">
+		<h2>ImagesZ</h2>
+		<p>TEXTB</p>
+		<ul>
+			<li><a href="/">Link 1</a></li>
+			<li><a href="/">Link 2</a></li>
+			<li><a href="/">Link 3</a></li>
+			<li><a href="/">Link 4</a></li>
+			<li><a href="/">Link 5</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+		<p>GeneratedY</p>
+	</div>
+</div>
+</body>
+</html>
+
+<!-- http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/finished.html -->
