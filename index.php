@@ -1,0 +1,81 @@
+<link rel="shortcut icon" href="http://faviconist.com/icons/14e3bcb542054e8057be093658a530df/favicon.ico" />
+<html>
+<body>
+
+<?php
+$pagetitle = htmlentities("Nicholas Malaya");
+//header();
+//phpinfo();
+class MyItem {
+  public $name, $link, $description;
+
+  public function __construct($iname, $ilink, $idescription) {
+    $this->name = htmlentities($iname);
+    $this->link = htmlentities($ilink);
+    $this->description = htmlentities($idescription);
+  }
+}
+?>
+<html>
+
+<head>
+<?php
+  print "<title>".$pagetitle."</title>\n";
+?>
+</head>
+<body>
+<?php
+  print "<h1>".$pagetitle."</h1>\n";
+?>
+
+<!-- #                      # -->
+<!-- # Ok, main text begins # -->
+<!-- #                      #-->
+
+<div style="float: left;">
+Institute for Computational Engineering and Sciences (ICES) <br />
+Department of Mechanical Engineering <br />
+The University of Texas at Austin <br /><br />
+
+<b>Contact Information:</b> <br />
+Email: nick AT ices.utexas.edu <br />
+Office: <a href="http://www.utexas.edu/maps/main/buildings/pob.html">POB 6.406</a> <br />
+Phone: 512-475-6868 <br /> <br />
+
+<b>Research Interests:</b> 
+<pre> High Performance Computing; Computer Modeling; Turbulence; <br /> 
+ Verification, Validation and Uncertainty Quantification; Bayesian Inference; Spectral Methods </pre>
+
+<?php
+print "<hr />\n";
+?>
+
+<h2>My Research:</h2>
+<?php include("files.php"); 
+print "<hr />\n";
+?>
+
+<?php include("menu.php"); ?>
+<p>Copyright Nicholas Malaya, 2016</p>
+
+<td>
+  <a href="images/RGB_university_primary.png":>
+    <img  height=160 src="images/RGB_university_primary.png" />
+  </a>
+</td>
+
+<!-- #                 # -->
+<!-- # Right side text # -->
+<!-- #                 # -->
+
+</div>
+  <img src="images/cool.png" style="width:422px;height:407px">
+</div>
+
+
+<!-- #                              # -->
+<!-- # All done, steady as she goes # -->
+<!-- #                              # -->
+
+</html>
+</body>
